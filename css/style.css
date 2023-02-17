@@ -9,6 +9,11 @@
 body {
     font-family: 'Work Sans', sans-serif;
 }
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-bottom: 130px;
+}
 .nav-container {
     display: flex;
     justify-content: space-around;
@@ -222,4 +227,71 @@ body {
     text-align: center;
     padding: 50px 0;
     background-color: rgba(236, 131, 10, 0.1);
+}
+/* responsive */
+@media screen and (max-width: 576px) {
+    .container{
+        padding: 10px;
+    }
+    /* banner and navbar */
+    nav {
+        display: none;
+    }
+
+    .banner {
+        padding: 0 10px;
+    }
+  
+    .banner-title {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+
+    /* features section */
+    .features {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .features-images {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+
+
+    .works {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .exp-img img {
+        width: 100%;
+    }
+
+    .experience-btn {
+        position: static;
+        margin-left: 20px;
+    }
+    /* facts section here */
+    .facts {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .fact {
+        width: 200px;
+    }
+    /* sponsors section */
+    .sponsors-images {
+        flex-direction: column;
+        gap: 30px;
+   }
 }
